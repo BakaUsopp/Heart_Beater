@@ -1,0 +1,7 @@
+@relation ParquetToARFF
+
+@attribute metadata numeric
+@attribute fileName numeric
+@attribute ecgData numeric
+
+@data
