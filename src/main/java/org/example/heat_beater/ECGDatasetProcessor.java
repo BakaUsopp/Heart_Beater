@@ -1,12 +1,10 @@
 package org.example.heat_beater;
 
-import weka.core.Attribute;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 
 import java.io.File;
-import java.util.ArrayList;
 
 public class ECGDatasetProcessor {
     public static void main(String[] args) {

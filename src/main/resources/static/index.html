@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Heart Beater</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+</head>
+<body>
+<h1>Heart Beater</h1>
+<form  th:action="@{/predict}" th:object="${healthData}" method="post">
+    
+    <label for="age" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+           xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">Age:</label>
+    <input type="number" id="age" name="age" required="required" />
+
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+    </select>
+
+    <label for="chestPain">Chest Pain:</label>
+    <select id="chestPain" name="chestPain">
+        <option value="typ_angina">Typical Angina</option>
+        <option value="asympt">Asymptomatic</option>
+        <option value="non_anginal">Non-Anginal</option>
+        <option value="atyp_angina">Atypical Angina</option>
+    </select>
+
+    <label for="trestbps">Resting Blood Pressure:</label>
+    <input type="number" id="trestbps" name="trestbps" required="required" />
+
+    <label for="chol">chol:</label>
+    <input type="number" id="chol" name="chol" required="required" />
+
+    <label for="fbs">Fasting Blood Sugar:</label>
+    <select id="fbs" name="fbs">
+        <option value="true">True</option>
+        <option value="false">False</option>
+    </select>
+
+    <label for="restecg">Resting ECG:</label>
+    <select id="restecg" name="restecg">
+        <option value="normal">Normal</option>
+        <option value="st_t_wave_abnormality">ST-T Wave Abnormality</option>
+        <option value="left_ventricular_hypertrophy">Left Ventricular Hypertrophy</option>
+    </select>
+
+    <label for="thalach">Max Heart Rate:</label>
+    <input type="number" id="thalach" name="thalach" required="required" />
+
+    <label for="exang">Exercise Induced Angina:</label>
+    <select id="exang" name="exang">
+        <option value="true">True</option>
+        <option value="false">False</option>
+    </select>
+
+    <label for="oldpeak">ST Depression:</label>
+    <input type="number" id="oldpeak" name="oldpeak" required="required" />
+
+    <label for="slope">ST Slope:</label>
+    <select id="slope" name="slope">
+        <option value="up">Up</option>
+        <option value="flat">Flat</option>
+        <option value="down">Down</option>
+    </select>
+
+    <label for="num_major_vessels">Num Major Vessels:</label>
+    <input type="number" id="num_major_vessels" name="num_major_vessels" required="required" />
+
+    <label for="thalassemia">Thalassemia:</label>
+    <select id="thalassemia" name="thalassemia">
+        <option value="normal">Normal</option>
+        <option value="fixed_defect">Fixed Defect</option>
+        <option value="reversable_defect">Reversable Defect</option>
+    </select>
+
+    <label for="exercise_angina">Exercise Angina:</label>
+    <select id="exercise_angina" name="exercise_angina">
+        <option value="true">True</option>
+        <option value="false">False</option>
+    </select>
+
+
+    <label for="ca">CA:</label>
+    <input type="number" id="ca" name="ca" required="required" />
+
+    <label for="thal">Thal:</label>
+    <select id="thal" name="thal">
+        <option value="normal">Normal</option>
+        <option value="fixed_defect">Fixed Defect</option>
+        <option value="reversable_defect">Reversable Defect</option>
+    </select>
+
+
+    <button id="btn"  type="submit">Predict</button>
+
+
+
+
+
+
+    
+</form>
+</body>
+</html>
