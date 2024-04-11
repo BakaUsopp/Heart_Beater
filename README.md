@@ -1,6 +1,6 @@
-# Heat Beater: A Java Application for Heat Analysis
+# Heart Beater: A Java Application for Heart Analysis
 
-Heat Beater is a robust Java application built with Spring Boot and Maven. It leverages the power of the Weka library for data analysis and machine learning, specifically focusing on heat data.
+Heat Bearter is a robust Java application built with Spring Boot and Maven. It leverages the power of the Weka library for data analysis and machine learning, specifically focusing on heat data.
 
 ## Project Structure
 
